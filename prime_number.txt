@@ -1,0 +1,9 @@
+number = int(input("Enter a number: \n"))
+remaining = []
+for i in range(2,number):
+    remaining.append(number % i)
+    if ((number % i) == 0):
+        print("This is not a prime number :", number)
+        break
+else:
+    print("This is a prime number:", number)
